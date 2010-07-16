@@ -27,7 +27,7 @@ BuildRequires: perl(MooseX::Has::Sugar)
 BuildRequires: perl(MooseX::Types::Moose)
 BuildRequires: perl(String::Formatter)
 BuildRequires: perl(Test::Exception)
-BuildRequires: perl(Test::More)
+BuildRequires: perl(Test::More) >= 0.940.0
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
