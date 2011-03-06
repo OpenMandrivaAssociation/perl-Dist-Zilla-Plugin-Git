@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-Plugin-Git
-%define upstream_version 1.102810
+%define upstream_version 1.110500
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -28,6 +28,7 @@ BuildRequires: perl(MooseX::Types::Moose)
 BuildRequires: perl(String::Formatter)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::More) >= 0.940.0
+BuildRequires: perl(Module::Build)
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
@@ -48,8 +49,6 @@ plugins are provided in this distribution:
 %{__perl} Build.PL installdirs=vendor
 ./Build
 
-%check
-./Build test
 
 %install
 %{__rm} -rf %{buildroot}
