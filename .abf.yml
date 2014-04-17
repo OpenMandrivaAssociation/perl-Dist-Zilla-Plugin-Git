@@ -1,2 +1,4 @@
+removed_sources:
+  Dist-Zilla-Plugin-Git-1.110500.tar.gz: 707070519b0f2a3ae40a68cd9c46ca49a4a1ec5b
 sources:
-  "Dist-Zilla-Plugin-Git-1.110500.tar.gz": 707070519b0f2a3ae40a68cd9c46ca49a4a1ec5b
+  Dist-Zilla-Plugin-Git-2.020.tar.gz: 8f6176742c9810a7ee9532b37b73aef1e4b6d369

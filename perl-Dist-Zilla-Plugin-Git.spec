@@ -1,11 +1,12 @@
 %define upstream_name    Dist-Zilla-Plugin-Git
-%define upstream_version 1.110500
+%define upstream_version 2.020
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Commit dist.ini and changelog
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
@@ -56,4 +57,5 @@ perl Build.PL installdirs=vendor
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
 
