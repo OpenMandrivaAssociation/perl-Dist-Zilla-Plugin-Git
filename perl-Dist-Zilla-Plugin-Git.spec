@@ -1,15 +1,13 @@
 %define upstream_name    Dist-Zilla-Plugin-Git
-%define upstream_version 1.110500
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	1.110500
+Release:	6
 
 Summary:	Commit dist.ini and changelog
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Cwd)
@@ -43,7 +41,7 @@ plugins are provided in this distribution:
  * Dist::Zilla::Plugin::Git::Push
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL installdirs=vendor
